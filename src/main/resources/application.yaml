@@ -1,0 +1,31 @@
+server:
+  port: 9005
+spring:
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:29092
+      group-id: test-kafka
+      auto-offset-reset: latest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.rza.mpei.util.CustomDeserializer
+      properties:
+        spring.json.trusted.packages: "*"
+
+    producer:
+      bootstrap-servers: localhost:29092
+      value-serializer: org.rza.mpei.util.CustomSerializer
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+
+topic:
+  name:
+    producer: topic-test-1
+    consumer: topic-test-1
+
+clickhouse:
+  host: localhost
+  port: 18213
+  database: measurement
+  user: default
+  password:
+
