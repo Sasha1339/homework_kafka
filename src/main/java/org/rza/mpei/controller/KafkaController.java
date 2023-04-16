@@ -3,9 +3,9 @@ package org.rza.mpei.controller;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import ru.mpei.dbkafka.dto.Measurement;
-import ru.mpei.dbkafka.produser.TopicProducer;
-import ru.mpei.dbkafka.repositories.RepositoryDto;
+import org.rza.mpei.dto.Measurement;
+import org.rza.mpei.produser.TopicProducer;
+import org.rza.mpei.repositories.RepositoryDto;
 
 import java.util.List;
 

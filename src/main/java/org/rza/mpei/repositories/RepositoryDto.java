@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
-import ru.mpei.dbkafka.dto.Measurement;
+import org.rza.mpei.dto.Measurement;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
